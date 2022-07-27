@@ -49,10 +49,7 @@ const submitForm = (e) => {
         message: message.value
      };
      console.log(formData); 
-     
-    //  axios.post("../server.js", formData)
-    //  .then((res) => console.log(res))
-    //  .catch((err) => console.log(err))
+    
     let xhr = new XMLHttpRequest();
     xhr.open('POST', '/');
     xhr.setRequestHeader('content-type', 'application/json');

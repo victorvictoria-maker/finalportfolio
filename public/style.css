@@ -136,6 +136,15 @@
     cursor: pointer;
   }
 
+  .hamburger:focus {
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+
   .hamburger span {
     display: block;
     width: 33px;
@@ -151,11 +160,11 @@
 
   .hamburger:hover span:nth-child(2){
     transform: translateX(10px);
-    background-color: purple;
+    background-color: var(--color-secondary);
   }
 
   .hamburger.is-active span{
-    background-color: purple;
+    background-color: var(--color-secondary)
   }
 
   .hamburger.is-active span:nth-child(2) {
@@ -213,15 +222,20 @@
     padding: 12px 16px;
     width: 100%;
     max-width: 200px;
-    background-color: purple;
+    background-color: var(--color-secondary);
     margin: 0 auto 16px;
     color: var(--color-white);
     text-decoration: none;
   }
 
+  /* .mobile-nav a:focus {
+    background-color: var(--color-secondary);
+    color: green;
+  } */
+
   .mobile-nav a:hover {
-    background-color: lightblue;
-    color: var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-secondary);
     text-decoration: none;
   }
 
